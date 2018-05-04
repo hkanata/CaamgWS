@@ -58,9 +58,7 @@ class WebServiceWsdlCaamg{
 		
 		//Adicionando parametro HASHdeAcesso
 		//Requerido para acessar o WEBSERVICE
-		$this->addParam(array(
-			"HashdeAcesso" => $this->hash
-		));
+		$this->addParam("HashdeAcesso", $this->hash);
 	}
 	
 	/** 
@@ -80,9 +78,7 @@ class WebServiceWsdlCaamg{
 			}
 			
 			//Adicionando novo parametro CPF
-			$this->addParam(array(
-				"CPF" => $cpf
-			));
+			$this->addParam("CPF", $cpf);
 			
 			//Chamando o Webservice e recuperando a resposta
 			$result = $this->client->__soapCall(
@@ -113,8 +109,8 @@ class WebServiceWsdlCaamg{
 		@param Array $param
 		@return void 
 	*/ 	
-	private function addParam($param){
-		array_push($this->params, $param);
+	private function addParam($index, $param){
+		$this->params[$index] = $param;
 	}
 	
 	/** 
