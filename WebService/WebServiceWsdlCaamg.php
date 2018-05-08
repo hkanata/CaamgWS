@@ -18,6 +18,7 @@
 
 namespace WebService;
 //musashi branch 1
+//musashi alterado do branch
 class WebServiceWsdlCaamg{
 
 	/** 
