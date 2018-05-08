@@ -17,7 +17,7 @@
 */ 
 
 namespace WebService;
-
+//musashi branch 1
 class WebServiceWsdlCaamg{
 
 	/** 
